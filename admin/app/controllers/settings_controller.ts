@@ -7,6 +7,7 @@ import { updateSettingSchema } from '#validators/settings';
 import { inject } from '@adonisjs/core';
 import type { HttpContext } from '@adonisjs/core/http'
 import type { KVStoreKey } from '../../types/kv_store.js';
+import { SETTINGS_KEYS } from '../../constants/kv_store.js';
 
 @inject()
 export default class SettingsController {
@@ -100,6 +101,9 @@ export default class SettingsController {
 
     async getSetting({ request, response }: HttpContext) {
         const key = request.qs().key;
+        if (!SETTINGS_KEYS.includes(key)) {
+            return response.status(400).send({ error: 'Invalid settings key' });
+        }
         const value = await KVStore.getValue(key as KVStoreKey);
         return response.status(200).send({ key, value });
     }
