@@ -41,7 +41,9 @@ When opening an issue:
 ---
 
 ## Getting Started with Contributing
-**Please note**: this is the Getting Started guide for developing and contributing to Nomad, NOT [installing Nomad](https://github.com/Crosstalk-Solutions/project-nomad/blob/main/README.md) for regular use! 
+**Please note**: this is the Getting Started guide for developing and contributing to Nomad, NOT [installing Nomad](https://github.com/Crosstalk-Solutions/project-nomad/blob/main/README.md) for regular use!
+
+For a detailed breakdown of the codebase architecture, directory structure, tech stack, and key design patterns, see [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ### Prerequisites
 
