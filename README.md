@@ -97,6 +97,8 @@ By design, Project N.O.M.A.D. is intended to be open and available without hurdl
 ## Contributing
 Contributions are welcome and appreciated! Please read this section fully to understand how to contribute to the project.
 
+For a detailed technical breakdown of the codebase architecture, directory structure, and developer setup, see [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ### General Guidelines
 
 - **Open an issue first**: Before starting work on a new feature or bug fix, please open an issue to discuss your proposed changes. This helps ensure that your contribution aligns with the project's goals and avoids duplicate work. Title the issue clearly and provide a detailed description of the problem or feature you want to work on.
